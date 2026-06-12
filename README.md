@@ -15,6 +15,91 @@
 
 Disable telemetry, Bloat, remove unwanted features, and fine-tune privacy and performance, all from a single interface. No manual registry editing, no config files to hunt down. Just run, configure, and apply.
 
+
+
+
+
+
+
+
+## ❓ FAQ
+
+<details>
+<summary><strong>Is this safe to use?</strong></summary>
+
+Yes. The tool only removes files that Discord does not need to function (old versions, unused language packs, cache, telemetry modules). Nothing related to your account, messages, or servers is touched. You can enable the **backup option** in Advanced settings before running anything, which saves a full copy of your Discord folder to the Desktop.
+
+</details>
+
+<details>
+<summary><strong>My antivirus flagged the script — is it a virus?</strong></summary>
+
+No. PowerShell scripts that interact with the filesystem are commonly flagged as false positives by heuristic-based antivirus engines, especially when they modify program files or registry keys. This script contains no malicious code. You can verify this yourself:
+
+- 📄 **The script is fully open-source** — read every line on this page before running it
+- 🔍 **VirusTotal scan:** [View latest scan results →](https://www.virustotal.com/gui/url/YOUR_SCAN_LINK_HERE)
+
+If your antivirus blocks execution, you may need to add a temporary exception or use:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+</details>
+
+<details>
+<summary><strong>Will this survive a Discord update?</strong></summary>
+
+Partially. Discord updates reinstall some of the removed components (language packs, modules) since they ship a fresh install on each update. After a major Discord update, it is recommended to re-run the tool. The **Clean Cache** section is always safe to re-run at any time.
+
+</details>
+
+<details>
+<summary><strong>Is it compatible with BetterDiscord / Vencord / other mods?</strong></summary>
+
+Generally yes. The tool does not touch injection files or mod-related assets. However, if you use a client mod, it is recommended to enable the **backup option** before debloating, and to avoid removing the auto-updater (as some mods rely on the update flow to re-inject themselves).
+
+</details>
+
+<details>
+<summary><strong>I removed Game Presence / RPC and now FiveM / my game launcher can't link my account.</strong></summary>
+
+The Game Presence module (`discord_game_sdk`) is required for some games (FiveM, certain launchers) to link your Discord account. To restore it: re-install Discord, or restore from the backup saved on your Desktop if you had the backup option enabled.
+
+</details>
+
+<details>
+<summary><strong>My Discord settings reset after cleaning the cache. Is that normal?</strong></summary>
+
+Some UI preferences (font size, theme, notification settings) are stored in cache and will reset after a full cache clean. Your **account session** and **server data** are unaffected. If you opted into removing **Local Storage**, you will be signed out and need to log back in — this is clearly warned in the tool.
+
+</details>
+
+<details>
+<summary><strong>Does this work on Discord PTB and Canary?</strong></summary>
+
+Yes. The tool auto-detects which Discord variants are installed (Stable, PTB, Canary) and displays them with color-coded status indicators. You can run it on any detected variant.
+
+</details>
+
+<details>
+<summary><strong>Can I restore my original Discord after debloating?</strong></summary>
+
+Yes, if you enabled the **backup option** before running. A full copy of your Discord installation is saved to your Desktop. To restore: close Discord, delete the current installation folder, rename the backup to the original folder name, and relaunch.
+
+Alternatively, a clean reinstall from [discord.com](https://discord.com) will restore everything.
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
 <br/>
 
 </div>
