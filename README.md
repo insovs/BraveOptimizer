@@ -47,13 +47,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 </details>
 
 <details>
-<summary><strong>Will this survive a Discord update?</strong></summary>
-
-Partially. Discord updates reinstall some of the removed components (language packs, modules) since they ship a fresh install on each update. After a major Discord update, it is recommended to re-run the tool. The **Clean Cache** section is always safe to re-run at any time.
-
-</details>
-
-<details>
 <summary><strong>Is it compatible with BetterDiscord / Vencord / other mods?</strong></summary>
 
 Generally yes. The tool does not touch injection files or mod-related assets. However, if you use a client mod, it is recommended to enable the **backup option** before debloating, and to avoid removing the auto-updater (as some mods rely on the update flow to re-inject themselves).
@@ -64,13 +57,6 @@ Generally yes. The tool does not touch injection files or mod-related assets. Ho
 <summary><strong>I removed Game Presence / RPC and now FiveM / my game launcher can't link my account.</strong></summary>
 
 The Game Presence module (`discord_game_sdk`) is required for some games (FiveM, certain launchers) to link your Discord account. To restore it: re-install Discord, or restore from the backup saved on your Desktop if you had the backup option enabled.
-
-</details>
-
-<details>
-<summary><strong>My Discord settings reset after cleaning the cache. Is that normal?</strong></summary>
-
-Some UI preferences (font size, theme, notification settings) are stored in cache and will reset after a full cache clean. Your **account session** and **server data** are unaffected. If you opted into removing **Local Storage**, you will be signed out and need to log back in — this is clearly warned in the tool.
 
 </details>
 
