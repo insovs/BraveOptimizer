@@ -47,13 +47,6 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 </details>
 
 <details>
-<summary><strong>Is it compatible with BetterDiscord / Vencord / other mods?</strong></summary>
-
-Generally yes. The tool does not touch injection files or mod-related assets. However, if you use a client mod, it is recommended to enable the **backup option** before debloating, and to avoid removing the auto-updater (as some mods rely on the update flow to re-inject themselves).
-
-</details>
-
-<details>
 <summary><strong>I removed Game Presence / RPC and now FiveM / my game launcher can't link my account.</strong></summary>
 
 The Game Presence module (`discord_game_sdk`) is required for some games (FiveM, certain launchers) to link your Discord account. To restore it: re-install Discord, or restore from the backup saved on your Desktop if you had the backup option enabled.
