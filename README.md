@@ -7,7 +7,6 @@
 [![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-1.0-orange?style=flat-square)](https://github.com/insovs/Brave-Optimizer/releases)
 
-<img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/e6ab015f-3a0f-48cc-a89d-f6c6e5139e94" />
 <img width="1983" height="793" alt="image" src="https://github.com/user-attachments/assets/1da28dc5-ce44-4277-9b3d-d32a8e7578ae" />
 
 
